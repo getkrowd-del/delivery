@@ -1,0 +1,9 @@
+html { font-size: 18px; }
+        .custom-scrollbar::-webkit-scrollbar { width:8px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background:#faf8f5; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background:#d5c7b9; border-radius:4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background:#e53935; }
+        @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
+        .float-animation { animation:float 5s ease-in-out infinite; }
+        .bg-grid-pattern { background-size:24px 24px; background-image:radial-gradient(circle,#e9dfd5 1px,transparent 1px); }
+        @keyframes ticker { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
