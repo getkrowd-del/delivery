@@ -313,7 +313,7 @@
 <body class="bg-warmCream-100 text-warmCream-900 antialiased overflow-x-hidden font-sans custom-scrollbar">
 
     <!-- Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-warmCream-50/90 backdrop-blur-md border-b border-warmCream-300/60 transition-all duration-300" id="mainHeader">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-warmCream-50/90 backdrop-blur-md border-b border-warmCream-300/60 transition-all duration-300" id="mainHeader" data-section="header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
                 <img src="https://krowdimg.b-cdn.net/clients/joes-pizza-whitesboro/tonypizza.png" alt="Joe's Pizza Whitesboro" class="w-14 h-14 object-contain drop-shadow-md">
@@ -346,7 +346,7 @@
     </header>
 
     <!-- Hero -->
-    <section id="legend" class="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
+    <section id="legend" class="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden" data-section="section-1">
         <div class="absolute top-1/4 -left-32 w-96 h-96 bg-pizzaGold-100 rounded-full filter blur-3xl opacity-60 pointer-events-none"></div>
         <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-pizzaRed-50 rounded-full filter blur-3xl opacity-70 pointer-events-none"></div>
         <div class="absolute inset-0 bg-grid-pattern opacity-40 z-0 pointer-events-none"></div>
@@ -358,11 +358,10 @@
                     </span>
                     <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-warmCream-900">
                         The Real Deal <br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pizzaRed-600 via-pizzaGold-500 to-pizzaGold-600">NY-Style Pizza</span> <br>
                         Since Day One.
                     </h1>
                     <p class="text-xl sm:text-2xl text-warmCream-800 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
-                        Real ingredients. Real flavor. No shortcuts. Joe's Pizza has been feeding Whitesboro with honest, hand-crafted pies, wings, and subs made fresh from scratch every single day.
+                        Opened in 1964, Joe's Pizza is best known for its gem, the Neapolitan, or upside-down pizza. Real ingredients, real flavor, no shortcuts: honest, hand-crafted pies, wings, and subs made fresh from scratch every single day.
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                         <a href="https://order.joespizzaofwhitesboro.com/" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-pizzaRed-600 hover:bg-pizzaRed-700 text-white font-bold text-lg px-9 py-5 rounded-full shadow-lg shadow-pizzaRed-600/20 transition-all hover:scale-[1.03]">
@@ -395,7 +394,7 @@
     </section>
 
     <!-- Specials Ticker -->
-    <section class="bg-pizzaRed-600 py-5 overflow-hidden">
+    <section class="bg-pizzaRed-600 py-5 overflow-hidden" data-section="section-2">
         <div class="flex gap-16 whitespace-nowrap" style="animation:ticker 25s linear infinite;">
             <span class="text-white font-bold uppercase tracking-wide text-lg">★ Large Pizza & 30 Wings $53.99</span>
             <span class="text-white font-bold uppercase tracking-wide text-lg">★ Slice Special: 2 Slices + Soda $8.99</span>
@@ -411,12 +410,12 @@
     </section>
 
     <!-- Menu -->
-    <section id="menu" class="py-24 bg-warmCream-200/50 border-t border-warmCream-300">
+    <section id="menu" class="py-24 bg-warmCream-200/50 border-t border-warmCream-300" data-section="section-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-4xl mx-auto mb-16 space-y-5">
                 <span class="text-pizzaRed-600 font-extrabold uppercase tracking-wider text-sm">made fresh daily</span>
                 <h2 class="font-serif text-5xl sm:text-6xl font-extrabold text-warmCream-900">The Joe's Pizza Menu</h2>
-                <p class="text-warmCream-800 font-medium text-xl leading-relaxed">From classic cheese pies to loaded specialties, wings, hot & cold subs, salads and more — all made from scratch right here in Whitesboro.</p>
+                <p class="text-warmCream-800 font-medium text-xl leading-relaxed">From classic cheese pies to loaded specialties, wings, hot & cold subs, salads and more, all made from scratch right here in Whitesboro.</p>
                 <p class="text-warmCream-800 text-base font-bold inline-flex items-center gap-2 bg-white border border-warmCream-300 px-5 py-3 rounded-full shadow-sm"><i data-lucide="credit-card" class="w-5 h-5 text-pizzaRed-600"></i> Prices shown as <strong class="text-warmCream-900">Cash</strong> / <strong class="text-warmCream-900">Card</strong></p>
                 <div class="flex items-center justify-center gap-3 flex-wrap pt-4">
                     <button onclick="filterMenu('all')" id="cat-btn-all" class="menu-cat-btn px-6 py-3 rounded-full text-base font-bold transition-all bg-pizzaRed-600 text-white border border-pizzaRed-600 shadow-sm">All Items</button>
@@ -438,7 +437,7 @@
                     <div class="space-y-2">
                         <p class="font-serif text-2xl font-bold text-warmCream-900">Add Your Own Toppings</p>
                         <p class="text-warmCream-800 text-lg font-medium">Regular toppings: Large $2.00 · Medium $1.75 · Small $1.50</p>
-                        <p class="text-warmCream-800 text-lg font-medium">Premium toppings (sausage, bacon, meatballs, ham): Large $3.00 · Medium $2.50 · Small $2.00 — add $1 for chicken</p>
+                        <p class="text-warmCream-800 text-lg font-medium">Premium toppings (sausage, bacon, meatballs, ham): Large $3.00 · Medium $2.50 · Small $2.00, add $1 for chicken</p>
                         <p class="text-warmCream-800 text-lg font-medium border-t border-warmCream-200 pt-3 mt-3"><strong class="text-warmCream-900">Slices:</strong> $3.50 cash / $3.63 card · All slice toppings $0.60</p>
                     </div>
                 </div>
@@ -456,8 +455,8 @@
                     <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Celery</span><span class="text-lg font-semibold text-warmCream-800">$1.50 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$1.56</span></span></div>
                     <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Sauces</span><span class="text-lg font-semibold text-warmCream-800">$1.00 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$1.04</span></span></div>
                     <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Pizza Sauce (8 oz)</span><span class="text-lg font-semibold text-warmCream-800">$2.50 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$2.60</span></span></div>
-                    <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Cold Sub Cheese <span class="font-semibold text-warmCream-800">— Large</span></span><span class="text-lg font-semibold text-warmCream-800">$1.00 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$1.04</span></span></div>
-                    <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Cold Sub Cheese <span class="font-semibold text-warmCream-800">— Small</span></span><span class="text-lg font-semibold text-warmCream-800">$0.50 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$0.52</span></span></div>
+                    <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Cold Sub Cheese <span class="font-semibold text-warmCream-800">Large</span></span><span class="text-lg font-semibold text-warmCream-800">$1.00 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$1.04</span></span></div>
+                    <div class="flex items-center justify-between px-8 py-4"><span class="text-lg font-bold text-warmCream-900">Cold Sub Cheese <span class="font-semibold text-warmCream-800">Small</span></span><span class="text-lg font-semibold text-warmCream-800">$0.50 <span class="text-warmCream-400">/</span> <span class="text-pizzaGold-600 font-bold">$0.52</span></span></div>
                 </div>
             </div>
 
@@ -470,7 +469,7 @@
     </section>
 
     <!-- Hours -->
-    <section id="hours" class="py-24 bg-white border-t border-warmCream-300">
+    <section id="hours" class="py-24 bg-white border-t border-warmCream-300" data-section="section-4">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <span class="text-pizzaGold-600 font-extrabold uppercase tracking-wider text-sm">we're open</span>
@@ -507,7 +506,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-24 bg-warmCream-200/50 border-t border-warmCream-300">
+    <section id="contact" class="py-24 bg-warmCream-200/50 border-t border-warmCream-300" data-section="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
                 <div class="space-y-8 flex flex-col justify-between">
@@ -515,6 +514,9 @@
                         <span class="text-pizzaRed-600 font-extrabold uppercase tracking-wider text-sm">visit our shop</span>
                         <h2 class="font-serif text-5xl font-extrabold text-warmCream-900">Come See Us in Whitesboro</h2>
                         <p class="text-warmCream-800 font-medium text-xl leading-relaxed">Stop in for a hot slice, call ahead for pickup, or order online for delivery. We're right on Main Street.</p>
+                    </div>
+                    <div class="w-full rounded-2xl border border-warmCream-300 shadow-sm overflow-hidden h-64 sm:h-72">
+                        <img src="https://krowdimg.b-cdn.net/clients/joes-pizza-whitesboro/50_IMG_6521.jpg" alt="Joe's Pizza storefront on Main Street in Whitesboro, NY" class="w-full h-full object-cover">
                     </div>
                     <div class="bg-white border border-warmCream-300 p-7 rounded-2xl space-y-5 shadow-sm">
                         <div class="flex items-center gap-4 border-b border-warmCream-200 pb-5">
@@ -541,7 +543,7 @@
                     </div>
                     <div class="flex items-center gap-4 p-5 bg-pizzaGold-100/40 border border-pizzaGold-500/20 rounded-2xl">
                         <i data-lucide="info" class="w-7 h-7 text-pizzaGold-600 flex-shrink-0"></i>
-                        <p class="text-base text-warmCream-800 font-bold leading-relaxed"><strong class="text-warmCream-900">Closed Mondays.</strong> Open Tuesday through Sunday — call ahead and your order will be ready for pickup in 15–30 minutes!</p>
+                        <p class="text-base text-warmCream-800 font-bold leading-relaxed"><strong class="text-warmCream-900">Closed Mondays.</strong> Open Tuesday through Sunday, call ahead and your order will be ready for pickup in 15–30 minutes!</p>
                     </div>
                 </div>
                 <div class="relative bg-white rounded-3xl border border-warmCream-300 overflow-hidden shadow-warm-lg min-h-[350px]">
@@ -552,7 +554,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-warmCream-300 py-12">
+    <footer class="bg-white border-t border-warmCream-300 py-12" data-section="footer">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-4 text-center md:text-left">
                 <img src="https://krowdimg.b-cdn.net/clients/joes-pizza-whitesboro/tonypizza.png" alt="Joe's Pizza" class="w-14 h-14 object-contain">
@@ -569,17 +571,17 @@
     </footer>
 
     <!-- Chat Bubble -->
-    <div id="chat-bubble" class="fixed bottom-7 right-7 z-[9999] flex flex-col items-end gap-3">
+    <div id="chat-bubble" class="fixed bottom-7 right-7 z-[9999] flex flex-col items-end gap-3" data-section="section-5">
         <a href="https://offercard.eatdrinklocals.com/index.cfm/1121" target="_blank" class="block bg-gradient-to-r from-pizzaGold-500 to-pizzaRed-600 text-white font-bold text-sm tracking-wider uppercase px-5 py-2.5 rounded-full shadow-lg whitespace-nowrap">⭐ Join Our VIP Club</a>
         <div id="chat-tooltip" onclick="openChat()" class="bg-white border border-warmCream-300 rounded-2xl rounded-br-sm px-5 py-4 max-w-[260px] shadow-warm-lg cursor-pointer relative">
             <button onclick="event.stopPropagation();document.getElementById('chat-tooltip').style.display='none'" class="absolute top-2 right-3 text-warmCream-400 text-sm">✕</button>
-            <p class="text-base text-warmCream-900 leading-snug">👋 Hey! I'm <strong class="text-pizzaRed-600">Slice</strong> — ask me about the menu, hours, or today's specials!</p>
+            <p class="text-base text-warmCream-900 leading-snug">👋 Hey! I'm <strong class="text-pizzaRed-600">Slice</strong>, ask me about the menu, hours, or today's specials!</p>
         </div>
         <button onclick="toggleChat()" aria-label="Chat with Slice" class="w-[110px] h-[110px] relative bg-transparent border-0">
             <img src="https://krowdimg.b-cdn.net/clients/joes-pizza-whitesboro/tonyschat.png" alt="Slice" class="w-[110px] h-[110px] object-contain absolute -top-2 -left-2 rounded-full drop-shadow-lg pointer-events-none">
         </button>
     </div>
-    <div id="chat-window" class="fixed bottom-[134px] right-7 w-[370px] h-[530px] rounded-2xl overflow-hidden shadow-2xl z-[9998] hidden flex-col bg-white border border-warmCream-300">
+    <div id="chat-window" class="fixed bottom-[134px] right-7 w-[370px] h-[530px] rounded-2xl overflow-hidden shadow-2xl z-[9998] hidden flex-col bg-white border border-warmCream-300" data-section="section-6">
         <div class="bg-gradient-to-r from-pizzaRed-700 to-pizzaRed-600 px-4 py-3 flex items-center gap-3">
             <img src="https://krowdimg.b-cdn.net/clients/joes-pizza-whitesboro/tonyschat.png" alt="Slice" class="w-11 h-11 rounded-full object-contain bg-white/15 p-0.5">
             <div>
