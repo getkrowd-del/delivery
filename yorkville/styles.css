@@ -1,5 +1,4 @@
-html { font-size: 18px; }
-        .custom-scrollbar::-webkit-scrollbar { width:8px; }
+.custom-scrollbar::-webkit-scrollbar { width:8px; }
         .custom-scrollbar::-webkit-scrollbar-track { background:#faf8f5; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background:#d5c7b9; border-radius:4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background:#e53935; }
