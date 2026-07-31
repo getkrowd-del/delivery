@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://getkrowd-del.github.io/delivery/new-hartford/</loc>
-    <lastmod>2026-07-31T18:08:40.474Z</lastmod>
+    <loc>https://getkrowd-del.github.io/delivery/yorkville/</loc>
+    <lastmod>2026-07-31T18:13:44.069Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://getkrowd-del.github.io/delivery/new-york-mills/</loc>
-    <lastmod>2026-07-31T18:00:17.339Z</lastmod>
+    <lastmod>2026-07-31T18:10:39.843Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://getkrowd-del.github.io/delivery/new-hartford/</loc>
+    <lastmod>2026-07-31T18:08:40.474Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
